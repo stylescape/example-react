@@ -14,7 +14,7 @@
 
 ---
 
-Include [Stylescape](https://scape.style)'s source Sass with [React](https://react.dev/) and [Next.js](https://nextjs.org/). Also includes [React Stylescape](https://react-bootstrap.github.io/)
+Include [Stylescape](https://scape.style)'s source Sass with [React](https://react.dev/) and [Next.js](https://nextjs.org/).
 
 ---
 
