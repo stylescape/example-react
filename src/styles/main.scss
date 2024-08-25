@@ -1,0 +1,56 @@
+// Override Stylescape's Sass default variables
+//
+// Nearly all variables in Stylescape are written with the `!default` flag.
+// This allows you to override the default values of those variables before
+// you import Stylescape's source Sass files.
+//
+// Overriding the default variable values is the best way to customize your
+// CSS without writing _new_ styles. For example, you can either change
+// `$body-color` or write more CSS that override's Stylescape's CSS like so:
+// `body { color: red; }`.
+
+
+//
+// Bring in Stylescape
+//
+
+// Option 1
+//
+// Import all of Stylescape's CSS
+
+// @import "stylescape/scss/stylescape";
+
+// Option 2
+//
+// Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
+
+// Toggle global options
+$enable-gradients: true;
+$enable-shadows: true;
+
+$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+
+// Include functions first
+@import "stylescape/scss/functions";
+
+// Customize some defaults
+$success: #7952b3;
+
+// Required
+@import "stylescape/scss/variables";
+@import "stylescape/scss/variables-dark";
+@import "stylescape/scss/maps";
+@import "stylescape/scss/mixins";
+@import "stylescape/scss/utilities";
+@import "stylescape/scss/root";
+@import "stylescape/scss/reboot";
+
+//
+// Custom styles
+//
+
+@import "custom";
+
+body {
+  padding: 1.5rem;
+}
