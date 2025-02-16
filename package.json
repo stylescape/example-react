@@ -27,6 +27,6 @@
     },
     "devDependencies": {
         "eslint": "^9.20.1",
-        "sass": "^1.84.0"
+        "sass": "^1.85.0"
     }
 }
