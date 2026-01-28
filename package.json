@@ -1,32 +1,31 @@
 {
-    "name": "stylescape_react",
+    "name": "stylescape-example-react",
+    "description": "Stylescape example with React and Vite",
     "version": "0.0.1",
     "private": true,
     "repository": "https://github.com/stylescape/example-react",
     "license": "MIT",
+    "engines": {
+        "node": ">=22.0.0"
+    },
     "stackblitz": {
         "startCommand": "npm start"
     },
     "scripts": {
-        "build": "next build",
-        "start": "next dev",
-        "lint": "next lint",
-        "fix": "next lint --fix",
+        "dev": "vite",
+        "start": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
         "test": "npm run build"
     },
     "dependencies": {
-        "@types/node": "^24.10.1",
-        "@types/react": "^19.2.9",
-        "@types/react-dom": "^19.2.3",
-        "bootstrap": "^5.3.8",
-        "next": "^16.1.4",
         "react": "^19.2.3",
-        "react-bootstrap": "^2.10.10",
         "react-dom": "^19.2.3",
-        "typescript": "^5.9.3"
+        "stylescape": "^0.3.9"
     },
     "devDependencies": {
-        "eslint": "^9.39.2",
-        "sass": "^1.97.3"
+        "@vitejs/plugin-react": "^4.5.1",
+        "sass": "^1.97.3",
+        "vite": "^7.3.1"
     }
 }

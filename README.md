@@ -12,9 +12,22 @@
 <h1 align="center" style='border-bottom: none;'>Stylescape + React</h1>
 <h3 align="center">Example Project</h3>
 
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/stylescape/example-react)
+
 ---
 
-Include [Stylescape](https://scape.style)'s source Sass with [React](https://react.dev/) and [Next.js](https://nextjs.org/).
+Integrate [Stylescape](https://scape.style) with [React](https://react.dev/) and [Vite](https://vitejs.dev/) for fast development and optimized production builds.
+
+---
+
+## Features
+
+- ⚛️ React 19 with modern hooks and patterns
+- ⚡ Vite for lightning-fast HMR and builds
+- 🎨 Stylescape's complete styling system
+- 🌗 Built-in theme toggle with `data-ss="theme-toggle"`
+- 📐 Frame layout with sidebars and ribbons
+- 🎹 Interactive accordion with `data-ss="accordion"`
 
 ---
 
@@ -22,9 +35,79 @@ Include [Stylescape](https://scape.style)'s source Sass with [React](https://rea
 
 ```sh
 git clone https://github.com/stylescape/example-react.git
+cd example-react
 npm install
 npm start
 ```
+
+---
+
+## Project Structure
+
+```
+src/
+├── App.jsx           # Main application component
+├── main.jsx          # Entry point with Stylescape imports
+└── styles/
+    └── main.scss     # Stylescape SCSS import
+```
+
+---
+
+## Usage
+
+### 1. Install Dependencies
+
+```sh
+npm install stylescape react react-dom
+npm install -D vite @vitejs/plugin-react sass
+```
+
+### 2. Import Stylescape in SCSS
+
+```scss
+// src/styles/main.scss
+@use "stylescape";
+```
+
+### 3. Import in Entry File
+
+```jsx
+// src/main.jsx
+import './styles/main.scss';
+import 'stylescape';
+```
+
+### 4. Use Stylescape Classes
+
+```jsx
+<div className="frame_main">
+    <header className="ribbon--top">
+        <input type="checkbox" data-ss="theme-toggle" />
+    </header>
+    <aside className="sidebar--left" data-ss="aside">
+        {/* Sidebar content */}
+    </aside>
+    <main className="main_content">
+        <div data-ss="accordion">
+            <details>
+                <summary>Accordion Item</summary>
+                <p>Content here</p>
+            </details>
+        </div>
+    </main>
+</div>
+```
+
+---
+
+## Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm start` | Start development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |
 
 ---
 
