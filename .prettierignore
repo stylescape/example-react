@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+.cache/
+.parcel-cache/
+.nuxt/
+.next/
+.astro/
+.output/
+.angular/
+
+# Logs
+*.log
+
+# Package files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Auto-generated
+*.min.js
+*.min.css

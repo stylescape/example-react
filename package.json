@@ -16,16 +16,21 @@
         "start": "vite",
         "build": "vite build",
         "preview": "vite preview",
+        "lint:css": "stylelint \"src/**/*.{css,scss}\"",
+        "format": "prettier --write \"src/**/*.{js,ts,jsx,tsx,css,scss,html,json}\"",
         "test": "npm run build"
     },
     "dependencies": {
-        "react": "^19.2.3",
-        "react-dom": "^19.2.3",
+        "react": "^19.2.4",
+        "react-dom": "^19.2.4",
         "stylescape": "^0.3.9"
     },
     "devDependencies": {
-        "@vitejs/plugin-react": "^4.5.1",
+        "@vitejs/plugin-react": "^4.7.0",
+        "prettier": "^3.8.1",
         "sass": "^1.97.3",
+        "stylelint": "^16.26.1",
+        "stylelint-config-standard-scss": "^15.0.1",
         "vite": "^7.3.1"
     }
 }

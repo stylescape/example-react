@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+.cache/
+.parcel-cache/
+.nuxt/
+.next/
+.astro/
+.output/
+.angular/
+
+# Vendor
+vendor/
+
+# Third-party
+**/node_modules/**
