@@ -53,5 +53,5 @@
     ],
     "softwareRequirements": "Node.js >= 22.0.0",
     "url": "https://github.com/stylescape/example-react",
-    "version": "0.0.1"
+    "version": "0.0.2"
 }
