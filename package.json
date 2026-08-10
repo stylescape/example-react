@@ -26,7 +26,7 @@
         "stylescape": "^0.3.18"
     },
     "devDependencies": {
-        "@vitejs/plugin-react": "^5.1.4",
+        "@vitejs/plugin-react": "^6.0.2",
         "prettier": "^3.8.3",
         "sass": "^1.100.0",
         "stylelint": "^16.18.0",
